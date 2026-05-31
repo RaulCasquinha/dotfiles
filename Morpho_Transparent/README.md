@@ -13,3 +13,5 @@ Matugen is a program that extracts colors from an images and generates a color p
 
 Waypaper is a program to switch wallpapers,
 you can add a post script that calls Matugen automatically
+
+## Example images
