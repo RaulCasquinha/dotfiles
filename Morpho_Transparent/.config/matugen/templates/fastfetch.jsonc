@@ -84,16 +84,6 @@
 		    "key":"󱐥 ",
 		    "keyColor": "{{colors.tertiary.dark.hex}}"
 	    },
-	    {
-		    "type": "localip",
-		    "key": "󱦂 ",
-		    "keyColor": "{{colors.tertiary_fixed.dark.hex}}"
-	    },
-	    {
-		    "type": "publicip",
-		    "key": " ",
-		    "keyColor": "{{colors.tertiary_fixed.dark.hex}}"
-	    },
     "break",
     "colors"
   ]
