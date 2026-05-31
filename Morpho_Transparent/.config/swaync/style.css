@@ -1,0 +1,136 @@
+* {
+  font-family: JetBrainsMonoNerdFont;
+  font-size: 14px;
+}
+
+.control-center {
+  background: #211f24;
+  border-radius: 12px;
+  border: 1px solid #49454e;
+  padding: 8px;
+}
+
+.widget-title {
+  color: #e7e0e8;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.widget-title > button {
+  background: #2b292f;
+  color: #cbc4cf;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.widget-title > button:hover {
+  background: #36343a;
+  color: #e7e0e8;
+}
+
+.widget-dnd {
+  color: #cbc4cf;
+  padding: 4px 12px;
+}
+
+.widget-dnd > switch {
+  border-radius: 12px;
+  background: #2b292f;
+  border: 1px solid #948f99;
+}
+
+.widget-dnd > switch:checked {
+  background: #4f3d75;
+}
+
+.widget-dnd > switch slider {
+  background: #cbc4cf;
+  border-radius: 12px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.widget-dnd > switch:checked slider {
+  background: #eaddff;
+}
+
+.notification-row {
+  margin: 4px 0;
+}
+
+.notification {
+  background: #1d1b20;
+  border-radius: 10px;
+  border: 1px solid #49454e;
+  padding: 10px;
+  margin: 2px 0;
+}
+
+.notification:hover {
+  background: #211f24;
+}
+
+.notification.critical {
+  border-color: #ffb4ab;
+}
+
+.notification-default-action {
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.notification-content {
+  padding: 4px;
+}
+
+.summary {
+  color: #e7e0e8;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.time {
+  color: #cbc4cf;
+  font-size: 12px;
+}
+
+.body {
+  color: #cbc4cf;
+  font-size: 13px;
+}
+
+.notification-action {
+  background: #2b292f;
+  color: #cbc4cf;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin: 2px;
+}
+
+.notification-action:hover {
+  background: #4f3d75;
+  color: #eaddff;
+}
+
+.close-button {
+  background: transparent;
+  color: #cbc4cf;
+  border: none;
+  border-radius: 50%;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.close-button:hover {
+  background: #93000a;
+  color: #ffb4ab;
+}
+
+.blank-window {
+  background: transparent;
+}

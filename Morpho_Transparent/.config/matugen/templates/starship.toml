@@ -1,0 +1,140 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[]({{colors.surface_container_highest.dark.hex}})\
+$os\
+$username\
+[](bg:{{colors.primary_container.dark.hex}} fg:{{colors.surface_container_highest.dark.hex}})\
+$directory\
+[](fg:{{colors.primary_container.dark.hex}} bg:{{colors.error_container.dark.hex}})\
+$git_branch\
+$git_status\
+[](fg:{{colors.error_container.dark.hex}} bg:{{colors.tertiary_container.dark.hex}})\
+$c\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+[](fg:{{colors.tertiary_container.dark.hex}} bg:{{colors.secondary_container.dark.hex}})\
+$docker_context\
+[](fg:{{colors.secondary_container.dark.hex}} bg:{{colors.on_primary_fixed.dark.hex}})\
+$time\
+[ ](fg:{{colors.on_primary_fixed.dark.hex}})\
+"""
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+[username]
+show_always = true
+style_user = "bg:{{colors.surface_container_highest.dark.hex}}"
+style_root = "bg:{{colors.surface_container_highest.dark.hex}}"
+format = '[$user ]($style)'
+disabled = false
+
+[os]
+style = "bg:{{colors.primary_container.dark.hex}}"
+disabled = true # Disabled by default
+
+[directory]
+style = "bg:{{colors.primary_container.dark.hex}}"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[c]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[cpp]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:{{colors.secondary_container.dark.hex}}"
+format = '[ $symbol $context ]($style)'
+
+[elixir]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[elm]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:{{colors.error_container.dark.hex}}"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:{{colors.error_container.dark.hex}}"
+format = '[$all_status$ahead_behind ]($style)'
+
+[golang]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[gradle]
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[nim]
+symbol = "󰆥 "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[scala]
+symbol = " "
+style = "bg:{{colors.tertiary_container.dark.hex}}"
+format = '[ $symbol ($version) ]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:{{colors.on_primary_fixed.dark.hex}}"
+format = '[ ♥ $time ]($style)'

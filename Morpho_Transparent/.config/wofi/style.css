@@ -1,0 +1,50 @@
+window {
+  background-color: #211f24;
+  border: 1px solid #49454e;
+}
+
+#input {
+  background-color: #2b292f;
+  color: #e7e0e8;
+  border: 1px solid #948f99;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px;
+  font-size: 14px;
+}
+
+#input:focus {
+  border-color: #d1bcfd;
+  outline: none;
+}
+
+#inner-box {
+  background-color: transparent;
+}
+
+#outer-box {
+  padding: 4px;
+}
+
+#scroll {
+  margin: 0 4px 4px 4px;
+}
+
+#entry {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #e7e0e8;
+}
+
+#entry:selected {
+  background-color: #4f3d75;
+  color: #eaddff;
+}
+
+#text {
+  font-size: 13px;
+}
+
+#img {
+  margin-right: 8px;
+}

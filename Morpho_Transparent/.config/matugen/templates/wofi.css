@@ -1,0 +1,50 @@
+window {
+  background-color: {{colors.surface_container.dark.hex}};
+  border: 1px solid {{colors.outline_variant.dark.hex}};
+}
+
+#input {
+  background-color: {{colors.surface_container_high.dark.hex}};
+  color: {{colors.on_surface.dark.hex}};
+  border: 1px solid {{colors.outline.dark.hex}};
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px;
+  font-size: 14px;
+}
+
+#input:focus {
+  border-color: {{colors.primary.dark.hex}};
+  outline: none;
+}
+
+#inner-box {
+  background-color: transparent;
+}
+
+#outer-box {
+  padding: 4px;
+}
+
+#scroll {
+  margin: 0 4px 4px 4px;
+}
+
+#entry {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: {{colors.on_surface.dark.hex}};
+}
+
+#entry:selected {
+  background-color: {{colors.primary_container.dark.hex}};
+  color: {{colors.on_primary_container.dark.hex}};
+}
+
+#text {
+  font-size: 13px;
+}
+
+#img {
+  margin-right: 8px;
+}
