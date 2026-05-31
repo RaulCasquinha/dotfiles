@@ -4,7 +4,7 @@ This is a personal repository for all my dotfiles
 
 I'm this is supposed to be imported or used with "stow"
 
-´stow -t ~ .´
+`stow -t ~ .`
 
 ## Themes
 
