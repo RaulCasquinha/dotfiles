@@ -15,3 +15,12 @@ Waypaper is a program to switch wallpapers,
 you can add a post script that calls Matugen automatically
 
 ## Example images
+
+!(https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220151_hyprshot.png)
+!(https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220216_hyprshot.png)
+
+!(https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220254_hyprshot.png)
+
+!(https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220410_hyprshot.png)
+
+!(https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220443_hyprshot.png)
