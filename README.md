@@ -16,4 +16,4 @@ A theme that changes with wallpaper and uses transparency to see the background
 
 ![image1](https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220216_hyprshot.png)
 
-![image2](https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220443_hyprshot.png)
+![image2](https://github.com/RaulCasquinha/dotfiles/blob/master/Screenshots/Morpho_Transparent/2026-05-31-220151_hyprshot.png)
