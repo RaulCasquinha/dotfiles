@@ -2,7 +2,7 @@
 
 ## Wallpaper switching
 
-This is done with swww, just call 'matugen image path/to/image',
+This is done with swww, just call ´matugen image path/to/image´,
 alternatively you can use [Waypaper](#waypaper) for this
 
 ## Matugen

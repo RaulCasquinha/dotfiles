@@ -1,12 +1,12 @@
 window {
-  background-color: #211f24;
-  border: 1px solid #49454e;
+  background-color: #251f17;
+  border: 1px solid #4f4539;
 }
 
 #input {
-  background-color: #2b292f;
-  color: #e7e0e8;
-  border: 1px solid #948f99;
+  background-color: #2f2921;
+  color: #ede0d4;
+  border: 1px solid #9b8f80;
   border-radius: 8px;
   padding: 8px 12px;
   margin: 8px;
@@ -14,7 +14,7 @@ window {
 }
 
 #input:focus {
-  border-color: #d1bcfd;
+  border-color: #f4bd6e;
   outline: none;
 }
 
@@ -33,12 +33,12 @@ window {
 #entry {
   padding: 8px 12px;
   border-radius: 8px;
-  color: #e7e0e8;
+  color: #ede0d4;
 }
 
 #entry:selected {
-  background-color: #4f3d75;
-  color: #eaddff;
+  background-color: #624000;
+  color: #ffddb2;
 }
 
 #text {
