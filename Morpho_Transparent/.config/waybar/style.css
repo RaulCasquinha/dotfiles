@@ -2,37 +2,37 @@
  *  Palette & constantes
  * =========================== */
 
-@define-color base-bg rgba(37, 31, 23, 0.8);
-@define-color base-bg-solid #251f17;
-@define-color base-fg #ede0d4;
+@define-color base-bg rgba(33, 31, 36, 0.8);
+@define-color base-bg-solid #211f24;
+@define-color base-fg #e7e0e8;
 
 @define-color ws-bg @base-bg;
 @define-color ws-bg-active @base-bg-solid;
 @define-color ws-bg-urgent #93000a;
 
 @define-color ws-fg @base-fg;
-@define-color ws-fg-active #f4bd6e;
+@define-color ws-fg-active #d1bcfd;
 @define-color ws-fg-urgent #ffb4ab;
 
 @define-color mpris-border @base-bg-solid;
 
-@define-color cpu-fg #b8cea1;
-@define-color mem-fg #ddc2a1;
-@define-color clock-fg #f4bd6e;
-@define-color clock-simple-fg #f4bd6e;
+@define-color cpu-fg #f0b8c6;
+@define-color mem-fg #ccc2db;
+@define-color clock-fg #d1bcfd;
+@define-color clock-simple-fg #d1bcfd;
 @define-color window-fg @base-fg;
-@define-color audio-fg #ddc2a1;
-@define-color audio-muted-fg #d3c4b4;
-@define-color tray-fg #b8cea1;
-@define-color bluetooth-fg #ddc2a1;
-@define-color battery-fg #d3eabc;
-@define-color logo-fg #f4bd6e;
-@define-color cava-fg #b8cea1;
+@define-color audio-fg #ccc2db;
+@define-color audio-muted-fg #cbc4cf;
+@define-color tray-fg #f0b8c6;
+@define-color bluetooth-fg #ccc2db;
+@define-color battery-fg #ffd9e1;
+@define-color logo-fg #d1bcfd;
+@define-color cava-fg #f0b8c6;
 @define-color power-fg #ffb4ab;
 
-@define-color tooltip-bg #3b342b;
-@define-color tooltip-border #f4bd6e;
-@define-color sep-fg #4f4539;
+@define-color tooltip-bg #36343a;
+@define-color tooltip-border #d1bcfd;
+@define-color sep-fg #49454e;
 
 /* ===========================
  *  Global
@@ -45,6 +45,7 @@ window#waybar * {
   font-family: Lexend, "JetBrainsMono NFP", monospace;
   font-size: 16px;
   font-weight: 600;
+  
 }
 
 window#waybar {
@@ -117,11 +118,11 @@ window#waybar {
 }
 
 #mpris.playing {
-  color: #b8cea1;
+  color: #f0b8c6;
 }
 
 #mpris.paused {
-  color: #d3c4b4;
+  color: #cbc4cf;
 }
 
 /* ===========================
@@ -169,7 +170,7 @@ window#waybar {
 }
 
 #custom-launcher {
-  color: #f4bd6e;
+  color: #d1bcfd;
 }
 
 #custom-logo {

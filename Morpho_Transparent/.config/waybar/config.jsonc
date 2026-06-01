@@ -9,13 +9,15 @@
   "fixed-center": true,
   "reload_style_on_change": true,
   "modules-left": [
-	  "custom/launcher",
-	  "hyprland/workspaces",
-	  "custom/cava",
-	  "custom/notification",
-	  "hyprland/window"
+    "custom/launcher",
+    "hyprland/workspaces",
+    "custom/cava",
+    "custom/notification",
+    "hyprland/window"
   ],
-  "modules-center": ["mpris"],
+  "modules-center": [
+    "mpris"
+  ],
   "modules-right": [
     "pulseaudio",
     "memory",
@@ -27,13 +29,11 @@
     "battery",
     "custom/power"
   ],
-
   "custom/launcher": {
-      "tooltip": false, 
-      "on-click": "wofi --show drun",
-      "format": ""
+    "tooltip": false,
+    "on-click": "wofi --show drun",
+    "format": ""
   },
-
   "mpris": {
     "format": "{player_icon} {dynamic}",
     "format-paused": "{status_icon} {dynamic}",
@@ -57,7 +57,6 @@
     "format": "{title}",
     "max-length": 20
   },
-
   "tray": {
     "show-passive-items": true,
     "spacing": 10
@@ -94,29 +93,28 @@
     "format": "{icon}{volume}%",
     "format-muted": "  muted",
     "format-icons": {
-	    "headphone": "",
-	    "default": [" ", " ", " "]
-	    },
+      "headphone": "",
+      "default": [
+        " ",
+        " ",
+        " "
+      ]
+    },
     "on-click": "pavucontrol"
-    
   },
-
   "custom/sep": {
     "format": "|",
     "tooltip": false
   },
-
   "custom/power": {
     "tooltip": false,
-    "on-click": "$HOME/.config/rofi/scripts/powermenu.sh",
+    "on-click": "wlogout",
     "format": "⏻"
   },
- 
   "custom/cava": {
     "format": "{}",
     "exec": "~/.config/waybar/scripts/cava.sh"
   },
-
   "custom/notification": {
     "escape": true,
     "exec": "swaync-client -swb",
@@ -130,7 +128,6 @@
     "return-type": "json",
     "tooltip": false
   },
-
   "network": {
     "interface": "wlp3s0",
     "format": "{ifname}",
@@ -140,20 +137,26 @@
   },
   "bluetooth": {
     "format": " {status}",
-    "format-connected" : " {device-alias}",
+    "format-connected": " {device-alias}",
     "tooltip": true,
     "on-click": "blueman-manager"
   },
- "battery": {
-   "states": {
-      	"warning": 30,
-       	"critical": 15
-      },
-       	"format": "{icon} {capacity}%",
-       	"format-charging": " {capacity}%",
-       	"format-plugged": "{capacity}%",
-       	"format-alt": "{time} {icon}",
-       	"format-full": " {capacity}%",
-	"format-icons": ["", "", "", "", ""]	
-	}
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": "{capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-full": " {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
 }
