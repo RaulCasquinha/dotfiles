@@ -2,54 +2,53 @@
  *  Palette & constantes
  * =========================== */
 
-@define-color base-bg rgba(37, 30, 23, 0.8);
-@define-color base-bg-solid #251e17;
-@define-color base-fg #eee0d5;
+@define-color base-bg rgba({{colors.surface_container.dark.red}}, {{colors.surface_container.dark.green}}, {{colors.surface_container.dark.blue}}, 1);
+@define-color base-bg-solid {{colors.surface_container.dark.hex}};
+@define-color base-fg {{colors.on_surface.dark.hex}};
 
 @define-color ws-bg @base-bg;
 @define-color ws-bg-active @base-bg-solid;
-@define-color ws-bg-urgent #93000a;
+@define-color ws-bg-urgent {{colors.error_container.dark.hex}};
 
 @define-color ws-fg @base-fg;
-@define-color ws-fg-active #f9ba72;
-@define-color ws-fg-urgent #ffb4ab;
+@define-color ws-fg-active {{colors.primary.dark.hex}};
+@define-color ws-fg-urgent {{colors.error.dark.hex}};
 
 @define-color mpris-border @base-bg-solid;
 
-@define-color cpu-fg #bccd9d;
-@define-color mem-fg #e0c1a2;
-@define-color clock-fg #f9ba72;
-@define-color clock-simple-fg #f9ba72;
+@define-color cpu-fg {{colors.tertiary.dark.hex}};
+@define-color mem-fg {{colors.secondary.dark.hex}};
+@define-color clock-fg {{colors.primary.dark.hex}};
+@define-color clock-simple-fg {{colors.primary.dark.hex}};
 @define-color window-fg @base-fg;
-@define-color audio-fg #e0c1a2;
-@define-color audio-muted-fg #d4c4b5;
-@define-color tray-fg #bccd9d;
-@define-color bluetooth-fg #e0c1a2;
-@define-color battery-fg #d8e9b7;
-@define-color logo-fg #f9ba72;
-@define-color cava-fg #bccd9d;
-@define-color power-fg #ffb4ab;
+@define-color audio-fg {{colors.secondary.dark.hex}};
+@define-color audio-muted-fg {{colors.on_surface_variant.dark.hex}};
+@define-color tray-fg {{colors.tertiary.dark.hex}};
+@define-color bluetooth-fg {{colors.secondary.dark.hex}};
+@define-color battery-fg {{colors.tertiary_fixed.dark.hex}};
+@define-color logo-fg {{colors.primary.dark.hex}};
+@define-color cava-fg {{colors.tertiary.dark.hex}};
+@define-color power-fg {{colors.error.dark.hex}};
 
-@define-color tooltip-bg #3b332c;
-@define-color tooltip-border #f9ba72;
-@define-color sep-fg #50453a;
+@define-color tooltip-bg {{colors.surface_container_highest.dark.hex}};
+@define-color tooltip-border {{colors.primary.dark.hex}};
+@define-color sep-fg {{colors.outline_variant.dark.hex}};
 
 /* ===========================
- *  Global
+ *  Global font is IBM 3270
  * =========================== */
 
 window#waybar,
 window#waybar * {
   min-height: 0;
   min-width: 0;
-  font-family: Lexend, "JetBrainsMono NFP", monospace;
-  font-size: 16px;
-  font-weight: 600;
-  
+  font-family: "3270 Nerd Font SemCond";
+  font-size: 20px;
+  font-weight: 300;
 }
 
 window#waybar {
-  background-color: transparent;
+  background-color: @base-bg;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -73,9 +72,9 @@ window#waybar {
 #network,
 #memory,
 #window {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
+  padding: 0.4rem 0.4rem;
+  margin: 0 0.2rem;
+  border-radius: 0px;
   background-color: @base-bg;
 }
 
@@ -84,9 +83,9 @@ window#waybar {
  * =========================== */
 
 #workspaces button {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
+  padding: 0 0.4rem;
+  margin: 0 0.2rem;
+  border-radius: 0px;
   background-color: @ws-bg;
   color: @ws-fg;
 }
@@ -111,18 +110,18 @@ window#waybar {
  * =========================== */
 
 #mpris {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
+  padding: 0 0.6rem;
+  margin: 0 0.25rem;
+  border-radius: 3px;
   background-color: @base-bg;
 }
 
 #mpris.playing {
-  color: #bccd9d;
+  color: {{colors.tertiary.dark.hex}};
 }
 
 #mpris.paused {
-  color: #d4c4b5;
+  color: {{colors.on_surface_variant.dark.hex}};
 }
 
 /* ===========================
@@ -170,7 +169,7 @@ window#waybar {
 }
 
 #custom-launcher {
-  color: #f9ba72;
+  color: {{colors.primary.dark.hex}};
 }
 
 #custom-logo {
@@ -183,6 +182,7 @@ window#waybar {
 
 #custom-power {
   color: @power-fg;
+  margin-right: 0.8rem;
 }
 
 /* ===========================

@@ -1,20 +1,20 @@
 window {
-  background-color: #251e17;
-  border: 1px solid #50453a;
+  background-color: #1d2024;
+  border: 1px solid #42474e;
+  font-family: "3270 Nerd Font SemCond";
 }
 
 #input {
-  background-color: #302921;
-  color: #eee0d5;
-  border: 1px solid #9d8e81;
-  border-radius: 8px;
+  background-color: #272a2f;
+  color: #e1e2e8;
+  border: 1px solid #8c9199;
   padding: 8px 12px;
   margin: 8px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 #input:focus {
-  border-color: #f9ba72;
+  border-color: #9fcafc;
   outline: none;
 }
 
@@ -32,17 +32,16 @@ window {
 
 #entry {
   padding: 8px 12px;
-  border-radius: 8px;
-  color: #eee0d5;
+  color: #e1e2e8;
 }
 
 #entry:selected {
-  background-color: #663e00;
-  color: #ffddba;
+  background-color: #174974;
+  color: #d0e4ff;
 }
 
 #text {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 #img {

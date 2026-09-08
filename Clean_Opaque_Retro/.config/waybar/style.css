@@ -2,54 +2,53 @@
  *  Palette & constantes
  * =========================== */
 
-@define-color base-bg rgba(37, 30, 23, 0.8);
-@define-color base-bg-solid #251e17;
-@define-color base-fg #eee0d5;
+@define-color base-bg rgba(29, 32, 36, 1);
+@define-color base-bg-solid #1d2024;
+@define-color base-fg #e1e2e8;
 
 @define-color ws-bg @base-bg;
 @define-color ws-bg-active @base-bg-solid;
 @define-color ws-bg-urgent #93000a;
 
 @define-color ws-fg @base-fg;
-@define-color ws-fg-active #f9ba72;
+@define-color ws-fg-active #9fcafc;
 @define-color ws-fg-urgent #ffb4ab;
 
 @define-color mpris-border @base-bg-solid;
 
-@define-color cpu-fg #bccd9d;
-@define-color mem-fg #e0c1a2;
-@define-color clock-fg #f9ba72;
-@define-color clock-simple-fg #f9ba72;
+@define-color cpu-fg #d6bee5;
+@define-color mem-fg #bac8db;
+@define-color clock-fg #9fcafc;
+@define-color clock-simple-fg #9fcafc;
 @define-color window-fg @base-fg;
-@define-color audio-fg #e0c1a2;
-@define-color audio-muted-fg #d4c4b5;
-@define-color tray-fg #bccd9d;
-@define-color bluetooth-fg #e0c1a2;
-@define-color battery-fg #d8e9b7;
-@define-color logo-fg #f9ba72;
-@define-color cava-fg #bccd9d;
+@define-color audio-fg #bac8db;
+@define-color audio-muted-fg #c2c7cf;
+@define-color tray-fg #d6bee5;
+@define-color bluetooth-fg #bac8db;
+@define-color battery-fg #f1daff;
+@define-color logo-fg #9fcafc;
+@define-color cava-fg #d6bee5;
 @define-color power-fg #ffb4ab;
 
-@define-color tooltip-bg #3b332c;
-@define-color tooltip-border #f9ba72;
-@define-color sep-fg #50453a;
+@define-color tooltip-bg #32353a;
+@define-color tooltip-border #9fcafc;
+@define-color sep-fg #42474e;
 
 /* ===========================
- *  Global
+ *  Global font is IBM 3270
  * =========================== */
 
 window#waybar,
 window#waybar * {
   min-height: 0;
   min-width: 0;
-  font-family: Lexend, "JetBrainsMono NFP", monospace;
-  font-size: 16px;
-  font-weight: 600;
-  
+  font-family: "3270 Nerd Font SemCond";
+  font-size: 20px;
+  font-weight: 300;
 }
 
 window#waybar {
-  background-color: transparent;
+  background-color: @base-bg;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -73,9 +72,9 @@ window#waybar {
 #network,
 #memory,
 #window {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
+  padding: 0.4rem 0.4rem;
+  margin: 0 0.2rem;
+  border-radius: 0px;
   background-color: @base-bg;
 }
 
@@ -84,9 +83,9 @@ window#waybar {
  * =========================== */
 
 #workspaces button {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
+  padding: 0 0.4rem;
+  margin: 0 0.2rem;
+  border-radius: 0px;
   background-color: @ws-bg;
   color: @ws-fg;
 }
@@ -111,18 +110,18 @@ window#waybar {
  * =========================== */
 
 #mpris {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
+  padding: 0 0.6rem;
+  margin: 0 0.25rem;
+  border-radius: 3px;
   background-color: @base-bg;
 }
 
 #mpris.playing {
-  color: #bccd9d;
+  color: #d6bee5;
 }
 
 #mpris.paused {
-  color: #d4c4b5;
+  color: #c2c7cf;
 }
 
 /* ===========================
@@ -170,7 +169,7 @@ window#waybar {
 }
 
 #custom-launcher {
-  color: #f9ba72;
+  color: #9fcafc;
 }
 
 #custom-logo {
@@ -183,6 +182,7 @@ window#waybar {
 
 #custom-power {
   color: @power-fg;
+  margin-right: 0.8rem;
 }
 
 /* ===========================

@@ -1,0 +1,16 @@
+{
+  "name": "mytheme",
+  "base": "dark",
+  "overrides": {
+    "clawd_body": "{{colors.on_background.dark.hex}}",
+    "text": "{{colors.on_surface.dark.hex}}",
+    "claude": "{{colors.primary.dark.hex}}",
+    "planMode": "{{colors.tertiary.dark.hex}}",
+    "chromeYellow": "{{colors.secondary.dark.hex}}",
+    "userMessageBackground": "{{colors.surface_container.dark.hex}}",
+    "diffAdded": "{{colors.primary_container.dark.hex}}",
+    "diffRemoved": "{{colors.error_container.dark.hex}}",
+    "error": "{{colors.error.dark.hex}}",
+    "success": "{{colors.tertiary_container.dark.hex}}"
+  }
+}

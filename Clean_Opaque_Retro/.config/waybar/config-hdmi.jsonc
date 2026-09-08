@@ -1,0 +1,44 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "output": "HDMI-A-1",
+  "height": 20,
+  "spacing": 2,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "clock#simpleclock",
+    "pulseaudio",
+    "network"
+  ],
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{id}",
+    "all-outputs": true
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 20
+  },
+  "clock#simpleclock": {
+    "tooltip": false,
+    "format": " {:%H:%M}"
+  },
+  "pulseaudio": {
+    "format": "{icon}{volume}%",
+    "format-muted": " muted",
+    "format-icons": {
+      "default": [" ", " ", " "]
+    }
+  },
+  "network": {
+    "interface": "wlp3s0",
+    "format-wifi": "{essid} "
+  }
+}
